@@ -28,7 +28,7 @@ void loop()
 
   if(Serial.read() == 't')
   {
-
+    countTests = 0;
     while(countTests < totalTests)
     {
       countTests = 0;
@@ -42,7 +42,7 @@ void loop()
       }
       else
       {
-        Serial.println(F("Response: GSM not responding"));
+        Serial.println(F("Response: No response"));
         Serial.println(F("Error: Test failed!"));
       }
       Serial.print(F("\n*****    Test: "));
@@ -50,9 +50,14 @@ void loop()
       Serial.println(F("    *****"));
       if(sendATcommand("AT+CREG?", "+CREG: 0,1", 2000))
       {
-        Serial.println("Response: +CREG: 0,1");
-        Serial.println("Info: Registered on the home network"); 
+        Serial.println(F("Response: +CREG: 0,1"));
+        Serial.println(F("Info: Registered on the home network")); 
         countTests++;
+      }
+      else
+      {
+        Serial.println(F("Response: Unexpected response"));
+        Serial.println(F("Info: Not registered to a network"));
       }
       while(Serial1.available() > 0)
       {
@@ -63,7 +68,7 @@ void loop()
       delay(1000);
     }
     Serial.println(HORIZONTAL_LINE);
-    Serial.println("|     Test has ended    |");
+    Serial.println("|       Test has ended         |");
     Serial.println(HORIZONTAL_LINE);
   }
 
