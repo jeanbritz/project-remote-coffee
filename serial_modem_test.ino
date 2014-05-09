@@ -35,7 +35,7 @@ void loop()
       Serial.print(F("\n*****    Test: "));
       Serial.print(F("Send \'AT\'"));
       Serial.println(F("    *****"));
-      if(sendATcommand("AT", "OK", 2000))
+      if(sendATcommand("AT", "OK", AT_COMMAND_TIMEOUT))
       {
         Serial.println(F("Response: OK"));
         countTests++;
@@ -48,7 +48,7 @@ void loop()
       Serial.print(F("\n*****    Test: "));
       Serial.print(F("Send \'AT+CREG?\'"));
       Serial.println(F("    *****"));
-      if(sendATcommand("AT+CREG?", "+CREG: 0,1", 2000))
+      if(sendATcommand("AT+CREG?", "+CREG: 0,1", AT_COMMAND_TIMEOUT))
       {
         Serial.println(F("Response: +CREG: 0,1"));
         Serial.println(F("Info: Registered on the home network")); 
