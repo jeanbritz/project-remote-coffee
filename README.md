@@ -16,7 +16,13 @@ The Microchip MCP9700 thermistors were used for measuring the base and steam tem
 
 This thermistor does not need extra conditioning circuitry. It is literary a ``plug-and-play'' thermistor. 
 It is inexpensive (costs ZAR 3.50) and very durable for a TO-92 package (it can operate in temperatures ranging from -40 degrees celsius to 125 degrees celsius). Its accuracy is unfortunately +/- 2 degrees celsius, but for the price one cannot complain.
+
+Where to buy?
+Mantech.co.za - [Click here](http://www.mantech.co.za/ProductInfo.aspx?Item=14M1688)
+
+
 Datasheet:[Click here](http://ww1.microchip.com/downloads/en/DeviceDoc/21942e.pdf)
+
 
 ### MLX90614 infrared thermometer
 
@@ -28,13 +34,6 @@ Application notes:
 [Click here](http://www.melexis.com/Prodmain.aspx?nID=615)
 
 
-These notes include:
-- SMBus communication with MLX90614 	
-- Solder techniques for IR sensor product 	
-- Soldering Application Note and Recommendations 	
-- Understanding MLX90614 on-chip digital signal filters
-
-
 Where to buy?
 - Sparkfun - [Click here](https://www.sparkfun.com/products/9570)
 - Netram.co.za - [Click here](http://netram.co.za/978-infrared-thermometer.html)
@@ -43,9 +42,18 @@ Where to buy?
 ## Actuator
 
 Very inexpensive and easy circuit to build
-
-
 Components used:
 - MOC3061 - Opto-coupled TRIAC driver with built-in zero-crossing circuit
 - BT136-600E - Main TRIAC
 - 2N2222 - NPN Transistor
+
+### Fairchild MOC3061 
+Datasheet:
+[Click here](http://www.fairchildsemi.com/ds/MO/MOC3061M.pdf)
+
+
+Where to buy all the components?
+Mantech.co.za 
+- [MOC3061](http://www.mantech.co.za/ProductInfo.aspx?Item=35M3489)
+- [NXP BT136-600E](http://www.mantech.co.za/ProductInfo.aspx?Item=35M3275)
+- [2N2222](http://www.mantech.co.za/ProductInfo.aspx?Item=72M3626)
