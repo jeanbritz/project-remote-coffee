@@ -9,7 +9,7 @@ My final-year project was to add a few sensors to an ordinary coffee percolator.
 
 The microprocessor chosen for this project, because it had 16 ADC ports, which are handy when interfacing various sensors.
 
-## Temperature sensors:
+## Temperature sensors
 For this project it was required to measure the base, steam and coffee pot's temperature.
 The Microchip MCP9700 thermistors were used for measuring the base and steam temperatures, while the Melexis MLX90614 infrared themometer was used to measure the coffee pot's temperature.
 ### Microchip MCP9700 Active Thermistor
@@ -22,13 +22,19 @@ Datasheet:[Click here](http://ww1.microchip.com/downloads/en/DeviceDoc/21942e.pd
 
 Datasheet:
 [Click here](https://www.sparkfun.com/datasheets/Sensors/Temperature/SEN-09570-datasheet-3901090614M005.pdf)
+
+
 Application notes:
 [Click here](http://www.melexis.com/Prodmain.aspx?nID=615)
+
+
 These notes include:
 - SMBus communication with MLX90614 	
 - Solder techniques for IR sensor product 	
 - Soldering Application Note and Recommendations 	
 - Understanding MLX90614 on-chip digital signal filters
+
+
 Where to buy?
 - Sparkfun - [Click here](https://www.sparkfun.com/products/9570)
 - Netram.co.za - [Click here](http://netram.co.za/978-infrared-thermometer.html)
@@ -37,6 +43,8 @@ Where to buy?
 ## Actuator
 
 Very inexpensive and easy circuit to build
+
+
 Components used:
 - MOC3061 - Opto-coupled TRIAC driver with built-in zero-crossing circuit
 - BT136-600E - Main TRIAC
