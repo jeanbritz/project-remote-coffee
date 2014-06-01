@@ -17,7 +17,6 @@ The Microchip MCP9700 thermistors were used for measuring the base and steam tem
 This thermistor does not need extra conditioning circuitry. It is literary a ``plug-and-play'' thermistor. 
 It is inexpensive (costs ZAR 3.50) and very durable for a TO-92 package (it can operate in temperatures ranging from -40 degrees celsius to 125 degrees celsius). Its accuracy is unfortunately +/- 2 degrees celsius, but for the price one cannot complain.
 
-Where to buy?
 Mantech.co.za - [Click here](http://www.mantech.co.za/ProductInfo.aspx?Item=14M1688)
 
 
@@ -41,19 +40,25 @@ Where to buy?
 
 ## Actuator
 
-Very inexpensive and easy circuit to build
+Very inexpensive and easy [circuit](https://github.com/jeanbritz/RemoteCoffee/blob/master/actuator_control_test/actuator-circuit.png) to build.
+
 Components used:
-- MOC3061 - Opto-coupled TRIAC driver with built-in zero-crossing circuit
-- BT136-600E - Main TRIAC
-- 2N2222 - NPN Transistor
 
-### Fairchild MOC3061 
-Datasheet:
-[Click here](http://www.fairchildsemi.com/ds/MO/MOC3061M.pdf)
+- Fairchild MOC3061 --- Opto-coupled TRIAC driver with built-in zero-crossing circuit ([Buy](http://www.mantech.co.za/ProductInfo.aspx?Item=35M3489)) ([Datasheet](http://www.fairchildsemi.com/ds/MO/MOC3061M.pdf)) ([App note](http://www.fairchildsemi.com/an/AN/AN-3004.pdf))
+- NXP BT136-600E --- Main TRIAC ([Buy](http://www.mantech.co.za/ProductInfo.aspx?Item=35M3275)) ([More info](http://www.nxp.com/products/thyristors/4_quadrant_triacs/BT136-600E.html))
+- 2N2222 --- NPN Switching Transistor ([Buy](http://www.mantech.co.za/ProductInfo.aspx?Item=72M3626))
 
 
-Where to buy all the components?
-Mantech.co.za 
-- [MOC3061](http://www.mantech.co.za/ProductInfo.aspx?Item=35M3489)
-- [NXP BT136-600E](http://www.mantech.co.za/ProductInfo.aspx?Item=35M3275)
-- [2N2222](http://www.mantech.co.za/ProductInfo.aspx?Item=72M3626)
+This Fairchild MOC3061 opto-coupled TRIAC is used, in conjunction with the BT136-600E TRIAC, to control the percolator using the cycle control method [1].
+
+
+
+
+
+References:
+---
+- [1] ON Semiconductor. (2006, Nov) Thyristor Theory and Design Considerations. [Online].
+     Available: http://www.onsemi.com/pub_link/Collateral/HBD855-D.pdf
+- [2] Philips Semiconductors, "Chapter 6 - Power Control with Thyristors and Triacs."
+[Online]. Available: http://www.nxp.com/documents/application_note/APPCHP6.pdf
+
